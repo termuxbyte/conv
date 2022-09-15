@@ -1,0 +1,22 @@
+#!/data/data/com.termux/files/usr/bin/bash
+ 
+ 
+echo -e "Updating default packages\n"
+apt update && apt -y upgrade
+ 
+echo -e "Requesting acces to storage\n"
+termux-setup-storage
+sleep 5
+ 
+echo -e "Installing ffmpeg\n"
+packages install -y ffmpeg
+ 
+echo -e "Creating bin directory\n"
+mkdir ~/bin
+ 
+echo -e "Creating convertedFiles directory\n"
+mkdir ~/storage/shared/convertedFiles
+ 
+echo -e "Downloading and installing termux-file-editor\n"
+wget http://pastebin.com/raw/bCSzt9i5 -O ~/bin/termux-file-editor
+dos2unix ~/bin/termux-file-editor

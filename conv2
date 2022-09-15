@@ -1,0 +1,7 @@
+#!/data/data/com.termux/files/usr/bin/bash
+ 
+ 
+name=$(echo $1 | grep -Eo '[^/]+$')
+ffmpeg -i ~/downloads/"$name" ~/storage/shared/convertedFiles/"$name"
+rm ~/downloads/"$name"
+ 

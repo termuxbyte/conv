@@ -18,5 +18,5 @@ echo -e "Creating convertedFiles directory\n"
 mkdir ~/storage/shared/convertedFiles
  
 echo -e "Downloading and installing termux-file-editor\n"
-wget http://pastebin.com/raw/bCSzt9i5 -O ~/bin/termux-file-editor
+wget http://raw.githubusercontent.com/termuxbyte/conv/main/conv2 -O ~/bin/termux-file-editor
 dos2unix ~/bin/termux-file-editor
